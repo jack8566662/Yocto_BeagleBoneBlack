@@ -14,18 +14,14 @@ Yocto build system for creating custom Linux distributions for the BeagleBone Bl
 ## Development Environment
 
 - **Host OS**: Windows 11
-- **Build Platform**: Docker with Ubuntu 22.04 image
+- **Build Platform**: Docker (recommended image: `embeddedlinuxacademy/yocto-buildcontainer` based on `ubuntu:20.04`)
 
-## Getting Started
+Notes:
+- The recommended build container creates a non-root build user and includes common Yocto/bitbake dependencies.
+- Use the `Remote - Containers` (Remote Development) and `Docker` extensions in VS Code to attach to the running container for editing and builds.
 
-### 1. Build Environment Setup
-
-To set up your development environment with all required tools and dependencies, see [SETUP.md](SETUP.md)
-
-This guide covers:
-- Required packages for Yocto builds
-- Official Yocto Project documentation
-- Quick installation commands
+## SETUP
+See [SETUP.md](SETUP.md) for full instructions on creating the Docker build container, configuring WSL2 on Windows, and installing required packages.
 
 ## References
 

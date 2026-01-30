@@ -52,6 +52,13 @@ mkdir ../../sources
 ```
 
 modified `local.conf` in build folder
+
+Please configure the target `MACHINE` for `beaglebone-yocto` building image
+```
+MACHINE ?= "beaglebone-yocto"
+#MACHINE ??= "qemux86-64"
+```
+
 ```
 # The default is a tmp directory under TOPDIR.
 #
